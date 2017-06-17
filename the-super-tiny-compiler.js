@@ -259,7 +259,7 @@
  *
  * If we were manipulating this AST directly, instead of creating a separate AST,
  * we would likely introduce all sorts of abstractions here. But just visiting
- * each node in the tree is enough.
+ * each node in the tree is enough for what we're trying to do.
  *
  * The reason I use the word "visiting" is because there is this pattern of how
  * to represent operations on elements of an object structure.
@@ -286,7 +286,7 @@
  *     CallExpression(node, parent) {},
  *   };
  *
- * However, there also exists the possibilty of calling things on "exit". Imagine
+ * However, there also exists the possibility of calling things on "exit". Imagine
  * our tree structure from before in list form:
  *
  *   - Program
